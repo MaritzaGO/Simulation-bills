@@ -6,48 +6,53 @@
 </p>
 
 <p>
-  <strong>Fechadeexpedicion:</strong>
+  <strong>Fecha de expedicion:</strong>
   <%= @factura.fechadeexpedicion %>
 </p>
 
 <p>
-  <strong>Fechadevencimiento:</strong>
+  <strong>Fecha de vencimiento:</strong>
   <%= @factura.fechadevencimiento %>
 </p>
 
 <p>
   <strong>Nombreprestadordeservicio:</strong>
-  <%= @factura.Nombreprestadordeservicio %>
+  <%= @factura.nombreprestadordeservicio %>
 </p>
 
 <p>
-  <strong>Nitprestadordeservicio:</strong>
-  <%= @factura.NITprestadordeservicio %>
+  <strong>Nit prestadordeservicio:</strong>
+  <%= @factura.nit_prestadordeservicio %>
 </p>
 
 <p>
-  <strong>Retenerdeimpuesto:</strong>
-  <%= @factura.retenerdeimpuesto %>
+  <strong>Retenedor de impuesto:</strong>
+  <%= @factura.retenedordeimpuesto %>
 </p>
 
 <p>
-  <strong>Valorimpuesto:</strong>
+  <strong>Valor impuesto:</strong>
   <%= @factura.valorimpuesto %>
 </p>
 
 <p>
-  <strong>Ivaincluido:</strong>
-  <%= @factura.IVAincluido %>
+  <strong>Iva incluido:</strong>
+  <%= @factura.iva_incluido %>
 </p>
 
 <p>
-  <strong>Nombrecliente:</strong>
-  <%= @factura.Nombrecliente %>
+  <strong>Valor iva:</strong>
+  <%= @factura.valor_iva %>
 </p>
 
 <p>
-  <strong>Nitcliente:</strong>
-  <%= @factura.NITcliente %>
+  <strong>Nombre cliente:</strong>
+  <%= @factura.nombrecliente %>
+</p>
+
+<p>
+  <strong>nit_cliente:</strong>
+  <%= @factura.nit_cliente %>
 </p>
 
 <p>
@@ -57,13 +62,25 @@
 
 <p>
   <strong>Valorservicio:</strong>
-  <%= @factura.valorservicio %>
+  <%= @factura.valor_servicio_unitario %>
 </p>
 
 <p>
-  <strong>Formadepago:</strong>
+  <strong>Forma de pago:</strong>
   <%= @factura.formadepago %>
 </p>
+
+<p>
+  <strong>Cantidad vendida:</strong>
+  <%= @factura.cantidad_vendida %>
+</p>
+
+<p>
+  <strong>Total venta:</strong>
+  <%= @factura.total_venta %>
+</p>
+
+
 
 <%= link_to 'Edit', edit_factura_path(@factura) %> |
 <%= link_to 'Back', facturas_path %>

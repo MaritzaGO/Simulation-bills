@@ -6,18 +6,21 @@
   <thead>
     <tr>
       <th>Codigo</th>
-      <th>Fechadeexpedicion</th>
-      <th>Fechadevencimiento</th>
-      <th>Nombreprestadordeservicio</th>
-      <th>Nitprestadordeservicio</th>
-      <th>Retenerdeimpuesto</th>
-      <th>Valorimpuesto</th>
-      <th>Ivaincluido</th>
-      <th>Nombrecliente</th>
-      <th>Nitcliente</th>
-      <th>Descripcionservicio</th>
-      <th>Valorservicio</th>
-      <th>Formadepago</th>
+      <th>Fecha de expedicion</th>
+      <th>Fecha de vencimiento</th>
+      <th>Nombre prestador de servicio</th>
+      <th>Nit prestador deservicio</th>
+      <th>Retenedor de impuesto</th>
+      <th>Valor impuesto</th>
+      <th>Iva incluido</th>
+      <th>Valor iva</th>
+      <th>Nombre cliente</th>
+      <th>Nit cliente</th>
+      <th>Descripcion servicio</th>
+      <th>Valor servicio unitario</th>
+      <th>Cantidad vendida</th>
+      <th>Forma de pago</th>
+      <th>Total venta</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,16 +31,21 @@
         <td><%= factura.codigo %></td>
         <td><%= factura.fechadeexpedicion %></td>
         <td><%= factura.fechadevencimiento %></td>
-        <td><%= factura.Nombreprestadordeservicio %></td>
-        <td><%= factura.NITprestadordeservicio %></td>
-        <td><%= factura.retenerdeimpuesto %></td>
+        <td><%= factura.nombreprestadordeservicio %></td>
+        <td><%= factura.nit_prestadordeservicio %></td>
+        <td><%= factura.retenedordeimpuesto %></td>
         <td><%= factura.valorimpuesto %></td>
-        <td><%= factura.IVAincluido %></td>
-        <td><%= factura.Nombrecliente %></td>
-        <td><%= factura.NITcliente %></td>
+        <td><%= factura.iva_incluido %></td>
+        <td><%= factura.valor_iva %></td>
+        <td><%= factura.nombrecliente %></td>
+        <td><%= factura.nit_cliente %></td>
         <td><%= factura.descripcionservicio %></td>
-        <td><%= factura.valorservicio %></td>
+        <td><%= factura.valor_servicio_unitario %></td>
+        <td><%= factura.cantidad_vendida %></td>
         <td><%= factura.formadepago %></td>
+        <td><%= factura.total_venta %></td>
+
+
         <td><%= link_to 'Show', factura %></td>
         <td><%= link_to 'Edit', edit_factura_path(factura) %></td>
         <td><%= link_to 'Destroy', factura, method: :delete, data: { confirm: 'Are you sure?' } %></td>

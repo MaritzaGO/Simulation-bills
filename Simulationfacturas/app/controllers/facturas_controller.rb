@@ -41,6 +41,7 @@ class FacturasController < ApplicationController
   # PATCH/PUT /facturas/1.json
   def update
     respond_to do |format|
+      
       if @factura.update(factura_params)
         format.html { redirect_to @factura, notice: 'Factura was successfully updated.' }
         format.json { render :show, status: :ok, location: @factura }
@@ -69,6 +70,6 @@ class FacturasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def factura_params
-      params.require(:factura).permit(:codigo, :fechadeexpedicion, :fechadevencimiento, :Nombreprestadordeservicio, :NITprestadordeservicio, :retenerdeimpuesto, :valorimpuesto, :IVAincluido, :Nombrecliente, :NITcliente, :descripcionservicio, :valorservicio, :formadepago)
+      params.require(:factura).permit(:codigo, :fechadeexpedicion, :fechadevencimiento, :nombreprestadordeservicio, :nit_prestadordeservicio, :retenedordeimpuesto, :valorimpuesto, :iva_incluido, :valor_iva, :nombrecliente, :nit_cliente, :descripcionservicio, :valor_servicio_unitario, :formadepago, :cantidad_vendida, :total_venta)
     end
 end
