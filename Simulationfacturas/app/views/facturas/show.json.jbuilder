@@ -1,0 +1,1 @@
+json.extract! @factura, :id, :codigo, :fechadeexpedicion, :fechadevencimiento, :Nombreprestadordeservicio, :NITprestadordeservicio, :retenerdeimpuesto, :valorimpuesto, :IVAincluido, :Nombrecliente, :NITcliente, :descripcionservicio, :valorservicio, :formadepago, :created_at, :updated_at

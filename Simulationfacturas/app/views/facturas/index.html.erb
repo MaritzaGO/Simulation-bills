@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listado de Facturas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Fechadeexpedicion</th>
+      <th>Fechadevencimiento</th>
+      <th>Nombreprestadordeservicio</th>
+      <th>Nitprestadordeservicio</th>
+      <th>Retenerdeimpuesto</th>
+      <th>Valorimpuesto</th>
+      <th>Ivaincluido</th>
+      <th>Nombrecliente</th>
+      <th>Nitcliente</th>
+      <th>Descripcionservicio</th>
+      <th>Valorservicio</th>
+      <th>Formadepago</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facturas.each do |factura| %>
+      <tr>
+        <td><%= factura.codigo %></td>
+        <td><%= factura.fechadeexpedicion %></td>
+        <td><%= factura.fechadevencimiento %></td>
+        <td><%= factura.Nombreprestadordeservicio %></td>
+        <td><%= factura.NITprestadordeservicio %></td>
+        <td><%= factura.retenerdeimpuesto %></td>
+        <td><%= factura.valorimpuesto %></td>
+        <td><%= factura.IVAincluido %></td>
+        <td><%= factura.Nombrecliente %></td>
+        <td><%= factura.NITcliente %></td>
+        <td><%= factura.descripcionservicio %></td>
+        <td><%= factura.valorservicio %></td>
+        <td><%= factura.formadepago %></td>
+        <td><%= link_to 'Show', factura %></td>
+        <td><%= link_to 'Edit', edit_factura_path(factura) %></td>
+        <td><%= link_to 'Destroy', factura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Crear nueva factura', new_factura_path %>

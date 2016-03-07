@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  fechadeexpedicion: 2016-03-04 17:14:54
+  fechadevencimiento: 2016-03-04 17:14:54
+  Nombreprestadordeservicio: MyString
+  NITprestadordeservicio: MyString
+  retenerdeimpuesto: MyString
+  valorimpuesto: 1.5
+  IVAincluido: MyString
+  Nombrecliente: MyString
+  NITcliente: MyString
+  descripcionservicio: MyString
+  valorservicio: 1.5
+  formadepago: MyString
+
+two:
+  codigo: MyString
+  fechadeexpedicion: 2016-03-04 17:14:54
+  fechadevencimiento: 2016-03-04 17:14:54
+  Nombreprestadordeservicio: MyString
+  NITprestadordeservicio: MyString
+  retenerdeimpuesto: MyString
+  valorimpuesto: 1.5
+  IVAincluido: MyString
+  Nombrecliente: MyString
+  NITcliente: MyString
+  descripcionservicio: MyString
+  valorservicio: 1.5
+  formadepago: MyString

@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @factura.codigo %>
+</p>
+
+<p>
+  <strong>Fechadeexpedicion:</strong>
+  <%= @factura.fechadeexpedicion %>
+</p>
+
+<p>
+  <strong>Fechadevencimiento:</strong>
+  <%= @factura.fechadevencimiento %>
+</p>
+
+<p>
+  <strong>Nombreprestadordeservicio:</strong>
+  <%= @factura.Nombreprestadordeservicio %>
+</p>
+
+<p>
+  <strong>Nitprestadordeservicio:</strong>
+  <%= @factura.NITprestadordeservicio %>
+</p>
+
+<p>
+  <strong>Retenerdeimpuesto:</strong>
+  <%= @factura.retenerdeimpuesto %>
+</p>
+
+<p>
+  <strong>Valorimpuesto:</strong>
+  <%= @factura.valorimpuesto %>
+</p>
+
+<p>
+  <strong>Ivaincluido:</strong>
+  <%= @factura.IVAincluido %>
+</p>
+
+<p>
+  <strong>Nombrecliente:</strong>
+  <%= @factura.Nombrecliente %>
+</p>
+
+<p>
+  <strong>Nitcliente:</strong>
+  <%= @factura.NITcliente %>
+</p>
+
+<p>
+  <strong>Descripcionservicio:</strong>
+  <%= @factura.descripcionservicio %>
+</p>
+
+<p>
+  <strong>Valorservicio:</strong>
+  <%= @factura.valorservicio %>
+</p>
+
+<p>
+  <strong>Formadepago:</strong>
+  <%= @factura.formadepago %>
+</p>
+
+<%= link_to 'Edit', edit_factura_path(@factura) %> |
+<%= link_to 'Back', facturas_path %>

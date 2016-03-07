@@ -1,0 +1,69 @@
+<%= form_for(@factura) do |f| %>
+  <% if @factura.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@factura.errors.count, "error") %> prohibited this factura from being saved:</h2>
+
+      <ul>
+      <% @factura.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigo %><br>
+    <%= f.text_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :fechadeexpedicion %><br>
+    <%= f.datetime_select :fechadeexpedicion %>
+  </div>
+  <div class="field">
+    <%= f.label :fechadevencimiento %><br>
+    <%= f.datetime_select :fechadevencimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :Nombreprestadordeservicio %><br>
+    <%= f.text_field :Nombreprestadordeservicio %>
+  </div>
+  <div class="field">
+    <%= f.label :NITprestadordeservicio %><br>
+    <%= f.text_field :NITprestadordeservicio %>
+  </div>
+  <div class="field">
+    <%= f.label :retenerdeimpuesto %><br>
+    <%= f.text_field :retenerdeimpuesto %>
+  </div>
+  <div class="field">
+    <%= f.label :valorimpuesto %><br>
+    <%= f.text_field :valorimpuesto %>
+  </div>
+  <div class="field">
+    <%= f.label :IVAincluido %><br>
+    <%= f.text_field :IVAincluido %>
+  </div>
+  <div class="field">
+    <%= f.label :Nombrecliente %><br>
+    <%= f.text_field :Nombrecliente %>
+  </div>
+  <div class="field">
+    <%= f.label :NITcliente %><br>
+    <%= f.text_field :NITcliente %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcionservicio %><br>
+    <%= f.text_field :descripcionservicio %>
+  </div>
+  <div class="field">
+    <%= f.label :valorservicio %><br>
+    <%= f.text_field :valorservicio %>
+  </div>
+  <div class="field">
+    <%= f.label :formadepago %><br>
+    <%= f.text_field :formadepago %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
